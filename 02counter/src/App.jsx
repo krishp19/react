@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <h1>cHAI AUR REACT</h1>
+      <h1>Counter</h1>
       <h2>Counter Value: {counter}</h2>
 
       <button
