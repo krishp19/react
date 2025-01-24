@@ -24,7 +24,7 @@ const Navbar = () => {
           <button className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-md">
             Login
           </button>
-          <button className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md">
+          <button href="/signup" className="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md" >
             Signup
           </button>
         </div>

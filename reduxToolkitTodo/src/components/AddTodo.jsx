@@ -10,7 +10,7 @@ function AddTodo() {
 
     const addTodoHandler = (e) => {
       e.preventDefault();
-      if (input.trim() === "") return; 
+      if (input.trim() === "") return(alert("Enter Something")); 
         dispatch(addTodo(input))
         setInput('')
     }

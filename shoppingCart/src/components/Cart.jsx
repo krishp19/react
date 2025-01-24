@@ -6,22 +6,19 @@ import { removeFromCart, clearCart } from '../features/cart/cartSlice';
 const Cart = () => {
   const dispatch = useDispatch();
   
-  // Select cart items from the Redux store
   const cartItems = useSelector((state) => state.cart.items);
-  
-  // Calculate the total price
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   const handleRemoveFromCart = (item) => {
-    dispatch(removeFromCart(item)); // Dispatch the action to remove the item from the cart
+    dispatch(removeFromCart(item)); 
   };
 
   const handleClearCart = () => {
-    dispatch(clearCart()); // Dispatch the action to clear the cart
+    dispatch(clearCart()); 
   };
 
   const handlePay = () => {
-    alert(`Total paid: $${totalPrice}`); // Placeholder for the Pay button logic
+    alert(`Total paid: $${totalPrice}`); 
   };
 
   return (
